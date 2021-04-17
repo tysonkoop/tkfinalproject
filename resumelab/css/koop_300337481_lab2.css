@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/*
+   HTML-CSS Lab
+   
+   Resume Style Sheet
+   Author: Tyson Koop
+   Date:   Jan 31, 2021
+   
+   Filename: ph_styles.css
+
+*/
+
+*
+{
+    font-family: 'Helvetica', Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+}
+
+html
+{
+    background-color: darkslategray;
+
+}
+
+body
+{
+    background-color: darkgray;
+    text-align: center;
+    margin-left: 12vw;
+    margin-right: 12vw;
+    border:1vw;
+    padding:1vw;
+    
+}
+
+header,section
+{
+    margin-bottom:10px;
+    background-color: lightgrey;
+}
+
+h1
+{
+    background-color: white;
+    text-align: left;
+    padding:10px 10px 10px 20px;
+    margin:0;
+}
+
+h2
+{
+    font-size: 0.75em;
+    text-align: left;
+    vertical-align: top;
+    padding: 10px 10px 10px 20px;
+    margin-top: 20px;
+}
+
+/* 
+Example of padding for header and section below
+*/
+
+ul, ol
+{
+    margin:0;
+    padding-bottom:20px;
+}
+
+ul>li, ol>li
+{   
+    text-align: left;
+    font-size: 0.5em;
+    margin-top: 0px;
+}
+
+ul>li>p, ol>li>p
+{
+    font-size: 0.75em;
+    
+}
+
+ul>li>p>a, ol>li>p>a
+{
+    font-size: 0.9em;
+}
+
+p.description
+{
+    font-size: 0.6em;
+}
+
+ol{list-style-type:upper-roman;}
+
+address
+{
+    color:white;
+    font-size: 0.4em;
+}
+
+#copyright
+{
+    font-size: 0.2em;
+}
+
+footer{margin: 1vw;}

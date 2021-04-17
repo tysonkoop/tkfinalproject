@@ -1,0 +1,188 @@
+body
+{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+}
+
+article{width:100%;}
+
+nav
+{
+    text-align: center;
+    background-color: lightgrey;
+}
+nav > ul
+{
+    display: block;
+    float:left;
+    width:100%;
+    padding-left: 0;
+    
+}
+
+p
+{
+    text-align: center;
+}
+
+img
+{
+    display:block;
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2
+{
+    text-align: center;
+}
+
+#paragraph{color:lightslategray;}
+
+@media only screen and (min-width: 320px)
+{  
+    nav
+    {
+        width: 100%;
+        text-align: center;
+    }
+   
+    nav > ul
+    {
+        text-align: center;
+        width:33%;
+    
+    }
+
+    header
+    {
+        display:block;
+    }
+
+    header > #name
+    {
+        text-align: center;
+    }
+
+    header > #paragraph
+    {
+        width: 60%;
+        line-height: 2em;
+        font-size: larger;
+        text-align: left; 
+
+    }
+
+    header > img
+    {
+        width: 40%;
+        float: right;
+    }
+
+    header > h1
+    {    
+        text-align: center;
+    }
+
+    article
+    {
+        padding-top: 150px;
+    }
+
+    .portfolio > img
+    {
+        width: 45%;
+    }
+
+    .portfolio
+    {
+        float:left;
+        width: 45%;
+    }
+
+    footer
+    {
+       padding-top: 250px;
+        height: 25%;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 769px)
+{  
+    header
+    {
+        display:block;
+    }
+
+    header > #name
+    {
+        width: 70%;
+        float:left;
+        text-align: left;
+    }
+    
+    nav
+    {
+        width: 30%;
+        float:left;
+        text-align: right;
+
+    }
+   
+    nav > ul
+    {
+        text-align: center;
+        width:33%;
+    
+    }
+
+
+    header > #paragraph
+    {
+        width: 60%;
+        float:right;
+        line-height: 2em;
+        font-size: larger;
+        text-align: left; 
+
+    }
+
+    header > img
+    {
+        width: 40%;
+        float: right;
+    }
+
+    header > h1
+    {    
+        text-align: center;
+    }
+
+    article
+    {
+        padding-top: 40%;
+    }
+
+    .portfolio > img
+    {
+        width: 45%;
+    }
+
+    .portfolio
+    {
+        float:left;
+        width: 33%;
+    }
+
+    footer
+    {
+       padding-top: 250px;
+        height: 25%;
+        width: 100%;
+    }
+
+}
+

@@ -1,0 +1,165 @@
+body
+{
+    width:100%;
+    height: 100%;
+}
+
+header
+{
+    background-color:blue;
+    height: 100px;
+    width: 100%;
+}
+
+nav
+{
+    background-color:beige;
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    text-align: center;
+
+}
+
+nav >ul
+{
+    text-align: center;
+    vertical-align: center;
+    flex-basis: 33%;
+    padding-left: 0;
+}
+
+nav> ul > p
+{
+    text-align: center;
+    vertical-align: center;
+    font-size: smaller;
+}
+
+article
+{
+    background-color:brown;
+    float: left;
+    display:flex;
+    flex-direction:row;
+    height: 100%;
+}
+
+article > div > p
+{
+    background-color: yellow;
+    text-align: center;
+    border-style: dashed;
+    border-color: red;
+}
+
+aside
+{
+    background-color:salmon;
+    float:left;
+    height: 100%;
+}
+
+footer
+{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height:40px;
+    background-color: seagreen;
+}
+
+/* mobile styles */
+@media only screen and (max-width: 480px)
+{
+    aside{display:none;}
+
+    article
+    {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article>div>p
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #f_one, #f_two, #f_three
+    {
+       flex-basis: 25%;
+    }
+
+    nav{flex-direction: column;}
+}
+/* tablet styles */
+@media only screen and (min-width: 480px)
+{
+    article
+    {
+        width: 80%;
+        flex-wrap: wrap;
+    }
+
+    #f_one
+    {
+        flex: 1 1 150px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    
+    #f_two
+    {
+        flex: 1 1 150px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #f_three
+    {
+        flex: 1 1 400px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    
+    aside{width:20%;}
+}
+
+/* desktop styles */
+@media only screen and (min-width: 769px)
+{
+    article
+    {
+        width: 80%;
+    }
+    aside{width:20%;}
+
+    #f_one
+    {
+        flex: 1 1 150px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    
+    #f_two
+    {
+        flex: 1 1 150px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #f_three
+    {
+        flex: 1 1 150px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+
+}

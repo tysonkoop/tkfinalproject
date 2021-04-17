@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="css/styles.css" rel="stylesheet"/>
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <header>
+        Lab:7 Javascript Arithmetic Operator
+    </header>
+    
+    <fieldset>
+        <legend>My Calculator</legend>
+        <textarea name="answerText" id="aBox"> </textarea> 
+    </fieldset>
+
+    <fieldset>
+        <legend>Input</legend>
+        <div class="formRow">
+            <label class="operandTitle" for="oOne">Operands:</label>
+            <input name="operandOne" id="oOne" type="number" value="0"/>
+            <input name="operandTwo" id="oTwo" type="number" value="0"/>
+        </div>
+
+        <div class="formRow">
+            <label class="operatorTitle" for="oper">Operators:</label>
+            <input class="operatorButs" name="operators" id="add" type="submit" value="+" onClick="additionClick()">
+            <input class="operatorButs" name="operators" id="multiply" type="button" value="&times;" onClick="multiplyClick()">
+            <input class="operatorButs" name="operators" id="divide" type="button"value="/" onClick="divisionClick()">
+            <input class="operatorButs" name="operators" id="clear" type="button"value="clear" onClick="clearClick()">
+        </div>
+
+    </fieldset>
+
+</body>
+</html>
